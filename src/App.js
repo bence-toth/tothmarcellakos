@@ -4,7 +4,7 @@ import "./App.css";
 const App = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3001/products")
+    fetch(`${process.env.REACT_APP_API_URL}/products`)
       .then((response) => response.json())
       .then((result) => setProducts(result));
   }, []);
@@ -17,7 +17,7 @@ const App = () => {
           {product.images.map((image, index) => (
             <img
               key={index}
-              src={`/images/products/${image}`}
+              src={`${process.env.REACT_APP_PUBLIC_URL}/images/products/${image}`}
               style={{ height: "200px" }}
               alt=""
             />
@@ -25,7 +25,7 @@ const App = () => {
           <div>
             <button
               onClick={() => {
-                window.location.href = `http://localhost:3001/checkout?id=${product.id}`;
+                window.location.href = `${process.env.REACT_APP_API_URL}/checkout?id=${product.id}`;
               }}
             >
               Buy this
