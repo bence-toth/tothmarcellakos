@@ -1,0 +1,17 @@
+.socialNavigation {
+  margin-bottom: 1em;
+}
+
+.socialNavigation > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.socialNavigation > ul a {
+  display: flex;
+}
+
+.socialNavigation > ul img {
+  width: 3em;
+}
