@@ -1,0 +1,22 @@
+.siteHeader {
+  border: 3px solid black;
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  box-shadow: 0 -40vmin 20vmin -20vmin hsla(0, 0%, 0%, 90%) inset;
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 1em;
+  margin-bottom: 1em;
+  transition: aspect-ratio 0.25s;
+}
+
+.siteHeader img {
+  max-width: 50%;
+}
+
+.siteHeader.small {
+  aspect-ratio: 2 / 0.2;
+}
