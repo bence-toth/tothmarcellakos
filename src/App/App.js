@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import StickyHeader from "../StickyHeader/StickyHeader";
 import Work from "../Work/Work";
 import Shop from "../Shop/Shop";
+import Image from "../Image/Image";
 
 import "./App.css";
 
@@ -16,6 +17,7 @@ const App = () => {
       <main style={{ paddingTop: stickyHeaderHeight }}>
         <Routes>
           <Route path="/" element={<Work />} />
+          <Route path="/works/:category/:image" element={<Image />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/about" element={<div>About page will come here</div>} />
           <Route
