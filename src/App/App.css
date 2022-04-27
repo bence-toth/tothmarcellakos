@@ -1,7 +1,6 @@
 .app {
   max-width: calc(1280px + 2em);
   padding: 1em;
-  border: 1px solid red;
   margin: 0 auto;
   position: relative;
 }

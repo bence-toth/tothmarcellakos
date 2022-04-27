@@ -1,0 +1,24 @@
+.imageCategory:not(:last-child) {
+  margin-bottom: 5em;
+}
+
+.imageCategory h2 {
+  font-family: "Urbanist", sans-serif;
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+
+.imageCategory .images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+.imageCategory .image {
+  border: 1px solid red;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-position: center center;
+  border: 3px solid black;
+}

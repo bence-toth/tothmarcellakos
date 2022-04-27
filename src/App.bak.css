@@ -28,46 +28,6 @@ h1 {
   color: hsl(0, 100%, 17%);
 }
 
-.product:not(:last-child) {
-  margin-bottom: 5em;
-}
-
-.product .name {
-  margin-bottom: 0.5em;
-  font-size: 32px;
-}
-
-.product .description {
-  line-height: 1.5;
-  margin-bottom: 1em;
-}
-
-.product .images {
-  display: flex;
-  gap: 1em;
-  margin-bottom: 1em;
-}
-
-.product .variants label {
-  font-weight: bold;
-  margin-right: 0.2em;
-}
-
-.product .variants select {
-  padding: 0.5em;
-}
-
-.product .price {
-  margin-block: 0.5em;
-  font-size: 2em;
-}
-
-.product .checkout {
-  padding: 1em;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
 footer {
   margin-top: 2em;
   padding-top: 1em;

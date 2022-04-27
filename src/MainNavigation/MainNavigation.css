@@ -6,10 +6,10 @@
 }
 
 .mainNavigation a {
+  font-family: "Urbanist", sans-serif;
   text-decoration: none;
   color: inherit;
   text-transform: uppercase;
-  font-family: "Urbanist", sans-serif;
   font-size: 1.25em;
   position: relative;
 }
