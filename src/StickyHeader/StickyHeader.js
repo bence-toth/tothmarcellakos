@@ -1,7 +1,9 @@
 import { useCallback, useRef } from "react";
+import { Link } from "react-router-dom";
 
 import SocialNavigation from "../SocialNavigation/SocialNavigation";
 import SiteHeader from "../SiteHeader/SiteHeader";
+import MainNavigation from "../MainNavigation/MainNavigation";
 
 import "./StickyHeader.css";
 
@@ -30,6 +32,7 @@ const StickyHeader = ({ setStickyHeaderHeight }) => {
     <div className="stickyHeader" ref={stickyHeaderCallbackRef}>
       <SocialNavigation />
       <SiteHeader />
+      <MainNavigation />
     </div>
   );
 };
