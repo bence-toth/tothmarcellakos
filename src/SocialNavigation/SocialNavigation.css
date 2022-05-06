@@ -38,6 +38,13 @@
 
 .socialNavigation > ul img {
   width: 3em;
+  transition: transform 0.25s;
+}
+
+.socialNavigation > ul:hover > li:hover img,
+.socialNavigation > ul:active > li:active img,
+.socialNavigation > ul:focus-within > li:focus-within img {
+  transform: scale(0.9);
 }
 
 @media (max-width: 1080px) {
