@@ -1,5 +1,5 @@
-import { useCallback, useRef } from "react";
-import { Link } from "react-router-dom";
+import { useCallback, useRef, useEffect, useState } from "react";
+import classNames from "classnames";
 
 import SocialNavigation from "../SocialNavigation/SocialNavigation";
 import SiteHeader from "../SiteHeader/SiteHeader";
@@ -28,11 +28,30 @@ const StickyHeader = ({ setStickyHeaderHeight }) => {
     }
   }, []);
 
+  const [isScrollPositionOnTop, setIsScrollPositionOnTop] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrollPositionOnTop(window.scrollY === 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="stickyHeader" ref={stickyHeaderCallbackRef}>
       <SocialNavigation />
       <SiteHeader />
       <MainNavigation />
+      <div
+        className={classNames("shadow", {
+          visible: !isScrollPositionOnTop,
+        })}
+      />
     </div>
   );
 };

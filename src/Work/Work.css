@@ -8,17 +8,47 @@
   font-size: 2em;
 }
 
+@media (max-width: 800px) {
+  .imageCategory h2 {
+    font-size: 1.5em;
+  }
+}
+
 .imageCategory .images {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1em;
 }
 
+@media (max-width: 1080px) {
+  .imageCategory .images {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .imageCategory .images {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .imageCategory .images {
+    grid-template-columns: 1fr;
+  }
+}
+
 .imageCategory .image {
-  border: 1px solid red;
   width: 100%;
   aspect-ratio: 1 / 1;
   background-size: cover;
   background-position: center center;
   border: 3px solid black;
+}
+
+@media (max-width: 800px) {
+  .imageCategory .image {
+    border-width: 2px;
+  }
 }

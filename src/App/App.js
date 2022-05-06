@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div className="app">
       <StickyHeader setStickyHeaderHeight={setStickyHeaderHeight} />
-      <main style={{ paddingTop: stickyHeaderHeight }}>
+      <main style={{ paddingTop: `calc(${stickyHeaderHeight}px + 1em)` }}>
         <Routes>
           <Route path="/" element={<Work />} />
           <Route path="/works/:category/:image" element={<Image />} />

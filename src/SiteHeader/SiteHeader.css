@@ -1,6 +1,7 @@
 .siteHeader {
   border: 3px solid black;
   width: 100%;
+  max-width: 100%;
   aspect-ratio: 2 / 1;
   box-shadow: 0 -40vmin 20vmin -20vmin hsla(0, 0%, 0%, 90%) inset;
   background-size: cover;
@@ -11,6 +12,12 @@
   padding: 1em;
   margin-bottom: 1em;
   transition: aspect-ratio 0.25s;
+}
+
+@media (max-width: 800px) {
+  .siteHeader {
+    border-width: 2px;
+  }
 }
 
 .siteHeader img {

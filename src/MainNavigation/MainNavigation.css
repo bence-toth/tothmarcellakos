@@ -2,7 +2,7 @@
   display: flex;
   list-style-type: none;
   justify-content: space-around;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .mainNavigation a {
@@ -24,6 +24,17 @@
   bottom: -2px;
   transform: scaleX(0);
   transition: transform 0.25s;
+}
+
+@media (max-width: 480px) {
+  .mainNavigation a {
+    font-size: 1em;
+  }
+
+  .mainNavigation a::after {
+    height: 1.5px;
+    bottom: -1.5px;
+  }
 }
 
 .mainNavigation a:hover::after {

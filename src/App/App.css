@@ -4,3 +4,9 @@
   margin: 0 auto;
   position: relative;
 }
+
+@media (max-width: 800px) {
+  .app {
+    padding: 0.5em;
+  }
+}
