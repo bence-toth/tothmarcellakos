@@ -1,20 +1,15 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Tóth Marcell Ákos",
+  "name": "Tóth Marcell Ákos",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "logo192.jpg",
+      "sizes": "192x192 64x64 32x32 24x24 16x16",
+      "type": "image/jpeg"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
+      "src": "logo512.jpg",
+      "type": "image/jpeg",
       "sizes": "512x512"
     }
   ],
