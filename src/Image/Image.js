@@ -75,7 +75,13 @@ const Image = () => {
                 >
                   Buy this
                 </button>
-                <div className="price">3000 HUF</div>
+                <div className="price">
+                  {image.variants
+                    .find((variant) => variant.name === selectedVariant)
+                    .price.toString()
+                    .replace(/\B(?=(\d{3})+(?!\d))/g, " ")}{" "}
+                  HUF
+                </div>
               </div>
             </>
           )}
