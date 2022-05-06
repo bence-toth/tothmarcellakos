@@ -11,8 +11,6 @@ import SiteFooter from "../SiteFooter/SiteFooter";
 import "./App.css";
 
 const App = () => {
-  // TODO: Furry friends kép
-  // TODO: Highlight selected menu item
   const [stickyHeaderHeight, setStickyHeaderHeight] = useState(0);
 
   return (
