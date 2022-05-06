@@ -39,7 +39,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "/tothmarcellakos",
   "devDependencies": {
     "gh-pages": "^3.2.3"
   }
