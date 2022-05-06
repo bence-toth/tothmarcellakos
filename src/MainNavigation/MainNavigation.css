@@ -42,3 +42,7 @@
 .mainNavigation a:active::after {
   transform: scaleX(1.2);
 }
+
+.mainNavigation a.selected::after {
+  transform: scaleX(1.5);
+}
