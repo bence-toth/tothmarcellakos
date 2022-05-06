@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
+import ShoppingCartIcon from "./shopping-cart.svg";
+
 import "./Image.css";
 
 const formatVariantCaption = (variant) => {
@@ -73,7 +75,7 @@ const Image = () => {
                     window.location.href = `${process.env.REACT_APP_API_URL}/checkout?id=${image.id}&variant=${selectedVariant}`;
                   }}
                 >
-                  Buy this
+                  <img src={ShoppingCartIcon} alt="" /> Buy this
                 </button>
                 <div className="price">
                   {image.variants

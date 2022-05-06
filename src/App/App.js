@@ -10,7 +10,6 @@ import SiteFooter from "../SiteFooter/SiteFooter";
 import "./App.css";
 
 const App = () => {
-  // TODO: Add cart image
   // TODO: Furry friends kép
   // TODO: Highlight selected menu item
 

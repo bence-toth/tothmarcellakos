@@ -85,6 +85,14 @@
   border: 3px solid black;
   border-radius: 5px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.imagePage .checkout img {
+  width: 1.75em;
 }
 
 .imagePage .checkout:hover,
