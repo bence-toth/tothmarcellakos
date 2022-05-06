@@ -5,6 +5,7 @@ import StickyHeader from "../StickyHeader/StickyHeader";
 import Work from "../Work/Work";
 import Shop from "../Shop/Shop";
 import Image from "../Image/Image";
+import SiteFooter from "../SiteFooter/SiteFooter";
 
 import "./App.css";
 
@@ -26,6 +27,7 @@ const App = () => {
           />
         </Routes>
       </main>
+      <SiteFooter />
     </div>
   );
 };

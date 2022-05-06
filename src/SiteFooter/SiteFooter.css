@@ -1,0 +1,17 @@
+.siteFooter {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 3px solid black;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .siteFooter {
+    padding-top: 0.5em;
+    border-top-width: 2px;
+  }
+}
+
+.siteFooter p {
+  font-size: 0.85em;
+}

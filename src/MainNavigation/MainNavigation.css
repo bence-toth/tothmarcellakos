@@ -37,6 +37,8 @@
   }
 }
 
-.mainNavigation a:hover::after {
+.mainNavigation a:focus::after,
+.mainNavigation a:hover::after,
+.mainNavigation a:active::after {
   transform: scaleX(1.2);
 }

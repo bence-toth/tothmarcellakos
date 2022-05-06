@@ -46,3 +46,9 @@
   background-position: center center;
   border: 3px solid black;
 }
+
+@media (max-width: 800px) {
+  .shopCategory .image {
+    border-width: 2px;
+  }
+}
