@@ -16,7 +16,7 @@ body,
 body {
   font-family: "Quicksand", sans-serif;
   overflow: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 ::-webkit-scrollbar {

@@ -10,8 +10,6 @@ import SiteFooter from "../SiteFooter/SiteFooter";
 import "./App.css";
 
 const App = () => {
-  // TODO: Rename picture
-  // TODO: Add political descriptions
   // TODO: Add cart image
   // TODO: Furry friends kép
   // TODO: Highlight selected menu item
