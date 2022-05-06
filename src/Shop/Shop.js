@@ -14,6 +14,9 @@ const Shop = () => {
 
   return (
     <>
+      <p className="shopLead">
+        You can buy prints of these pictures. Thank you for supporting my work.
+      </p>
       {categories
         .filter((category) =>
           category.images.some((image) => image.variants !== null)
