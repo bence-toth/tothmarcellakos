@@ -89,11 +89,25 @@ const Image = () => {
           )}
         </div>
         <div className="preview">
-          <img
-            className="mainImage"
-            src={`/images/${params.category}/${image.id}/${image.thumbnail}`}
-            alt={image.name}
-          />
+          {image.watermark ? (
+            <a
+              href={`/images/${params.category}/${image.id}/${image.watermark}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="mainImage"
+                src={`/images/${params.category}/${image.id}/${image.thumbnail}`}
+                alt={image.name}
+              />
+            </a>
+          ) : (
+            <img
+              className="mainImage"
+              src={`/images/${params.category}/${image.id}/${image.thumbnail}`}
+              alt={image.name}
+            />
+          )}
         </div>
         {image.mockups && (
           <div className="mockups">
