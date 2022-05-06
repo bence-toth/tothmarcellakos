@@ -32,7 +32,9 @@ const StickyHeader = ({ setStickyHeaderHeight }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrollPositionOnTop(window.scrollY === 0);
+      if (window.scrollY > 0) {
+        setIsScrollPositionOnTop(false);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
