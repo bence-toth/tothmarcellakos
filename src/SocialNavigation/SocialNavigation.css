@@ -1,5 +1,7 @@
 .socialNavigation {
   margin-bottom: 1em;
+  display: flex;
+  justify-content: flex-end;
 }
 
 @media (max-width: 800px) {
@@ -12,6 +14,22 @@
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
+}
+
+.socialNavigation > ul:hover > li {
+  transition: opacity 0.25s;
+}
+
+.socialNavigation > ul:hover > li,
+.socialNavigation > ul:active > li,
+.socialNavigation > ul:focus-within > li {
+  opacity: 0.33;
+}
+
+.socialNavigation > ul:hover > li:hover,
+.socialNavigation > ul:active > li:active,
+.socialNavigation > ul:focus-within > li:focus-within {
+  opacity: 1;
 }
 
 .socialNavigation > ul a {
