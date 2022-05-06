@@ -10,6 +10,12 @@ import SiteFooter from "../SiteFooter/SiteFooter";
 import "./App.css";
 
 const App = () => {
+  // TODO: Rename picture
+  // TODO: Add political descriptions
+  // TODO: Add cart image
+  // TODO: Furry friends kép
+  // TODO: Highlight selected menu item
+
   const [stickyHeaderHeight, setStickyHeaderHeight] = useState(0);
   const [orderState, setOrderState] = useState(null);
 
@@ -47,10 +53,6 @@ const App = () => {
           <Route path="/works/:category/:image" element={<Image />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/about" element={<div>About page will come here</div>} />
-          <Route
-            path="/contact"
-            element={<div>Contact page will come here</div>}
-          />
         </Routes>
       </main>
       <SiteFooter />
