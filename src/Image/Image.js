@@ -89,7 +89,7 @@ const Image = () => {
         <div className="preview">
           <img
             className="mainImage"
-            src={`${process.env.REACT_APP_PUBLIC_URL}/images/${params.category}/${image.id}/${image.thumbnail}`}
+            src={`/images/${params.category}/${image.id}/${image.thumbnail}`}
             alt={image.name}
           />
         </div>
@@ -98,7 +98,7 @@ const Image = () => {
             {image.mockups.map((mockup, mockupIndex) => (
               <img
                 key={mockupIndex}
-                src={`${process.env.REACT_APP_PUBLIC_URL}/images/${params.category}/${image.id}/${mockup}`}
+                src={`/images/${params.category}/${image.id}/${mockup}`}
                 alt=""
               />
             ))}

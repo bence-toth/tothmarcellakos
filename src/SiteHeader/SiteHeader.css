@@ -14,6 +14,18 @@
   transition: aspect-ratio 0.25s;
 }
 
+@media (min-aspect-ratio: 2/1) {
+  .siteHeader {
+    aspect-ratio: 5 / 2;
+  }
+}
+
+@media (min-aspect-ratio: 5/2) {
+  .siteHeader {
+    aspect-ratio: 3 / 1;
+  }
+}
+
 @media (max-width: 800px) {
   .siteHeader {
     border-width: 2px;
