@@ -10,7 +10,7 @@ const SocialNavigation = () => (
     <ul>
       <li>
         <a
-          href="mailto:tothmak@gmail.com"
+          href="mailto:tothmarcellakos@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
