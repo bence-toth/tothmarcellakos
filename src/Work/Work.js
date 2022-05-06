@@ -27,6 +27,9 @@ const Work = () => {
                 to={`/works/${category.folder}/${image.id}/`}
                 style={{
                   backgroundImage: `url(${process.env.REACT_APP_PUBLIC_URL}/images/${category.folder}/${image.id}/${image.thumbnail})`,
+                  ...(image.backgroundPosition && {
+                    backgroundPosition: image.backgroundPosition,
+                  }),
                 }}
               >
                 <div className="overlay">

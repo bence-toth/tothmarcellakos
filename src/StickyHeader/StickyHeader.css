@@ -30,6 +30,12 @@
   );
 }
 
+@media (max-width: 800px) {
+  .stickyHeader .shadow {
+    height: 2em;
+  }
+}
+
 .stickyHeader .shadow.visible {
   opacity: 1;
 }
