@@ -9,9 +9,7 @@ const Shop = () => {
   useEffect(() => {
     fetch(`${process.env.REACT_APP_API_URL}/products`)
       .then((response) => response.json())
-      .then((result) =>
-        setCategories(result.map((p) => ({ ...p, selectedVariant: 0 })))
-      );
+      .then(setCategories);
   }, []);
 
   return (
