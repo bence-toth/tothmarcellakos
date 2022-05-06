@@ -10,3 +10,24 @@
     padding: 0.5em;
   }
 }
+
+.notice,
+.error {
+  padding: 1em;
+  margin-bottom: 2em;
+  border-radius: 0.2em;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.notice {
+  background-color: hsl(120, 50%, 80%);
+  border: 2px solid hsl(120, 75%, 30%);
+  color: hsl(120, 100%, 17%);
+}
+
+.error {
+  background-color: hsl(0, 50%, 80%);
+  border: 2px solid hsl(0, 75%, 30%);
+  color: hsl(0, 100%, 17%);
+}
