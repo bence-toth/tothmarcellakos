@@ -34,7 +34,11 @@ const Shop = () => {
                     style={{
                       backgroundImage: `url(${process.env.REACT_APP_PUBLIC_URL}/images/${category.folder}/${image.id}/${image.thumbnail})`,
                     }}
-                  />
+                  >
+                    <div className="overlay">
+                      <span>{image.name}</span>
+                    </div>
+                  </Link>
                 ))}
             </div>
           </section>
