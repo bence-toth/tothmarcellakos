@@ -10,6 +10,10 @@ const copyrightYear =
 const SiteFooter = () => {
   return (
     <footer className="siteFooter">
+      <p>
+        Huh, no annoying popups? That's right, this website doesn't use any
+        cookies. We don't store any of your data. You aren't being tracked here.
+      </p>
       <p>© {copyrightYear} Tóth Marcell Ákos. All rights reserved.</p>
     </footer>
   );

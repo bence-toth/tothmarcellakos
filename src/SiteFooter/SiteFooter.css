@@ -14,4 +14,9 @@
 
 .siteFooter p {
   font-size: 0.85em;
+  line-height: 1.25;
+}
+
+.siteFooter p:not(:last-child) {
+  margin-bottom: 1em;
 }
