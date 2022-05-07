@@ -7,6 +7,7 @@ import Work from "../Work/Work";
 import Shop from "../Shop/Shop";
 import Image from "../Image/Image";
 import SiteFooter from "../SiteFooter/SiteFooter";
+import About from "../About/About";
 
 import "./App.css";
 
@@ -22,7 +23,7 @@ const App = () => {
           <Route path="/" element={<Work />} />
           <Route path="/works/:category/:image" element={<Image />} />
           <Route path="/shop" element={<Shop />} />
-          <Route path="/about" element={<div>About page will come here</div>} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </main>
       <SiteFooter />
