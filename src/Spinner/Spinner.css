@@ -1,0 +1,31 @@
+.spinner {
+  height: 4em;
+  display: flex;
+  justify-content: center;
+}
+
+.spinner > div {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  border: 3px solid black;
+  border-left-color: transparent;
+  animation: spinning 1.5s linear infinite;
+}
+
+@media (max-width: 800px) {
+  .spinner > div {
+    border-width: 2px;
+    width: 2em;
+    height: 2em;
+  }
+}
+
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

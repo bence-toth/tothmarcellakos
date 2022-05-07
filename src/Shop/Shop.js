@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Spinner from "../Spinner/Spinner";
 
 import "./Shop.css";
 
@@ -11,6 +12,10 @@ const Shop = () => {
       .then((response) => response.json())
       .then(setCategories);
   }, []);
+
+  if (categories.length === 0) {
+    return <Spinner />;
+  }
 
   return (
     <>
