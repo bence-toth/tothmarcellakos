@@ -33,12 +33,6 @@
   }
 }
 
-@media (max-width: 480px) {
-  .imageCategory .images {
-    grid-template-columns: 1fr;
-  }
-}
-
 .imageCategory .image {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -76,6 +70,12 @@
   opacity: 0;
   transform: translateY(1em);
   transition: opacity 0.25s, transform 0.25s;
+}
+
+@media (max-width: 480px) {
+  .imageCategory .image .overlay {
+    font-size: 1em;
+  }
 }
 
 .imageCategory .image:hover .overlay,
