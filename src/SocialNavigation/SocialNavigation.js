@@ -21,7 +21,7 @@ const SocialNavigation = () => (
         <a
           href="https://www.facebook.com/T%C3%B3th-Marcell-%C3%81kos-103071485764790"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           <img src={FacebookIcon} alt="Follow me on Facebook" />
         </a>
@@ -30,7 +30,7 @@ const SocialNavigation = () => (
         <a
           href="https://instagram.com/tothmarcellakos"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           <img src={InstagramIcon} alt="Follow me on Instagram" />
         </a>
@@ -39,7 +39,7 @@ const SocialNavigation = () => (
         <a
           href="https://www.linkedin.com/in/tothmarcellakos/"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           <img src={LinkedInIcon} alt="Connect with me on LinkedIn" />
         </a>
