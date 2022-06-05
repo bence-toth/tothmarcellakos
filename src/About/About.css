@@ -1,7 +1,6 @@
 .about h1 {
   margin-bottom: 1em;
   padding-bottom: 0.25em;
-  border-bottom: 3px solid black;
 }
 
 .about p {
@@ -60,7 +59,6 @@
   }
 
   .about h1 {
-    border: 0;
     margin-bottom: 0.5em;
   }
 
