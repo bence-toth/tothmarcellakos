@@ -7,26 +7,24 @@ const About = () => {
     <div className="about">
       <div className="columns">
         <div className="heading">
-          <h1>Hi, I’m Elon.</h1>
+          <h1>Hi, I’m Marcell Ákos Tóth.</h1>
         </div>
         <div className="info">
           <p>
-            I am basically pretty rich. I bought Twitter the other day because I
-            was bored.
+            I am a graphic designer, illustrator and digital artist. I enjoy
+            creating art, whether it be about issues personal to me, things that
+            relate to our world at large, or simply something beautiful to
+            share.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-            fringilla sagittis massa, in efficitur risus congue id. In faucibus
-            volutpat tincidunt. Suspendisse feugiat, est vitae dictum ornare,
-            orci sapien convallis est, a sollicitudin sapien ex in velit.
-            Aliquam in lectus nec massa vehicula dignissim blandit vehicula
-            augue.
-          </p>
-          <p>
-            Duis dignissim est eget mi dapibus, id convallis augue auctor. Nulla
-            iaculis turpis sit amet nulla porta, a commodo felis varius. Integer
-            laoreet nunc velit, quis luctus sem vulputate a. Duis lacinia
-            posuere nulla, a faucibus leo vestibulum eget.
+            The thing I value above all else is humanity and I try to bring it
+            to whatever project I’m working on. I find it important to stand up
+            for human rights and try to be an ally to those who need one. When
+            it comes to editorial work, I hope to shine a light on politics’
+            injustices, face people’s privileges and prejudices – including my
+            own – and show the importance of taking mental health seriously. I
+            love to observe the world of artists, which easily keeps me humble
+            and ever curious.
           </p>
         </div>
         <div className="profile">
