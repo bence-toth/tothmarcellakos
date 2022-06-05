@@ -18,17 +18,29 @@ const SocialNavigation = () => (
         </a>
       </li>
       <li>
-        <a href="/" target="_blank" rel="noopener">
+        <a
+          href="https://www.facebook.com/T%C3%B3th-Marcell-%C3%81kos-103071485764790"
+          target="_blank"
+          rel="noopener"
+        >
           <img src={FacebookIcon} alt="Follow me on Facebook" />
         </a>
       </li>
       <li>
-        <a href="/" target="_blank" rel="noopener">
+        <a
+          href="https://instagram.com/tothmarcellakos"
+          target="_blank"
+          rel="noopener"
+        >
           <img src={InstagramIcon} alt="Follow me on Instagram" />
         </a>
       </li>
       <li>
-        <a href="/" target="_blank" rel="noopener">
+        <a
+          href="https://www.linkedin.com/in/tothmarcellakos/"
+          target="_blank"
+          rel="noopener"
+        >
           <img src={LinkedInIcon} alt="Connect with me on LinkedIn" />
         </a>
       </li>
