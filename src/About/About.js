@@ -7,7 +7,7 @@ const About = () => {
     <div className="about">
       <div className="columns">
         <div className="heading">
-          <h1>Hi, I’m Marcell Ákos Tóth.</h1>
+          <h1>Hi, I’m Marcell.</h1>
         </div>
         <div className="info">
           <p>
