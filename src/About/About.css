@@ -44,6 +44,12 @@
   border: 3px solid black;
   display: block;
   margin-bottom: 1em;
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+}
+
+.about .profilePicture:hover {
+  filter: grayscale(0%);
 }
 
 @media (max-width: 920px) {
