@@ -39,6 +39,9 @@ const Image = () => {
   if (isImageLoading || !image) {
     return null;
   }
+  const selectedImageVariant = image.variants.find(
+    (variant) => variant.name === selectedVariant
+  );
 
   return (
     <div className="imagePage">
@@ -77,13 +80,30 @@ const Image = () => {
                 >
                   <img src={ShoppingCartIcon} alt="" /> Buy this
                 </button>
-                <div className="price">
-                  {image.variants
-                    .find((variant) => variant.name === selectedVariant)
-                    .price.toString()
-                    .replace(/\B(?=(\d{3})+(?!\d))/g, " ")}{" "}
-                  HUF
-                </div>
+                {selectedImageVariant.price ===
+                selectedImageVariant.discountPrice ? (
+                  <div className="price">
+                    {selectedImageVariant.price
+                      .toString()
+                      .replace(/\B(?=(\d{3})+(?!\d))/g, " ")}{" "}
+                    HUF
+                  </div>
+                ) : (
+                  <div className="discountedPriceWrapper">
+                    <div className="price">
+                      {selectedImageVariant.discountPrice
+                        .toString()
+                        .replace(/\B(?=(\d{3})+(?!\d))/g, " ")}{" "}
+                      HUF
+                    </div>
+                    <div className="oldPrice">
+                      {selectedImageVariant.price
+                        .toString()
+                        .replace(/\B(?=(\d{3})+(?!\d))/g, " ")}{" "}
+                      HUF
+                    </div>
+                  </div>
+                )}
               </div>
             </>
           )}

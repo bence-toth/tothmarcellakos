@@ -70,9 +70,22 @@
   margin-top: 1em;
 }
 
+@media (max-width: 920px) {
+  .imagePage .discountedPriceWrapper {
+    text-align: center;
+  }
+}
+
 .imagePage .price {
   font-size: 1.75em;
   font-weight: bold;
+}
+
+.imagePage .oldPrice {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 0.5em;
+  text-decoration: line-through;
 }
 
 .imagePage .checkout {
