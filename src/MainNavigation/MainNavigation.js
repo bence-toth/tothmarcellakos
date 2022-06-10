@@ -7,8 +7,6 @@ import "./MainNavigation.css";
 const MainNavigation = () => {
   const location = useLocation();
 
-  console.log(location);
-
   return (
     <nav className="mainNavigation">
       <ul>
