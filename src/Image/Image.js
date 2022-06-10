@@ -39,7 +39,7 @@ const Image = () => {
   if (isImageLoading || !image) {
     return null;
   }
-  const selectedImageVariant = image.variants.find(
+  const selectedImageVariant = image?.variants?.find(
     (variant) => variant.name === selectedVariant
   );
 
