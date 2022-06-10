@@ -87,6 +87,12 @@ body.dark .shopCategory .image {
   transition: opacity 0.25s, transform 0.25s;
 }
 
+@media (prefers-reduced-motion) {
+  .shopCategory .image .overlay {
+    transition: none;
+  }
+}
+
 @media (max-width: 480px) {
   .shopCategory .image .overlay {
     font-size: 1em;

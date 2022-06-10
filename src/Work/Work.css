@@ -76,6 +76,12 @@ body.dark .imageCategory .image {
   transition: opacity 0.25s, transform 0.25s;
 }
 
+@media (prefers-reduced-motion) {
+  .imageCategory .image .overlay {
+    transition: none;
+  }
+}
+
 @media (max-width: 480px) {
   .imageCategory .image .overlay {
     font-size: 1em;
