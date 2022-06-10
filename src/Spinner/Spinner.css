@@ -13,6 +13,13 @@
   animation: spinning 1.5s linear infinite;
 }
 
+@media (prefers-color-scheme: dark) {
+  .spinner > div {
+    border: 3px solid hsl(0, 0%, 90%);
+    border-left-color: transparent;
+  }
+}
+
 @media (max-width: 800px) {
   .spinner > div {
     border-width: 2px;

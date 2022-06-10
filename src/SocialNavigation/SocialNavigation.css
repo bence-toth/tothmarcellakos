@@ -41,6 +41,12 @@
   transition: transform 0.25s;
 }
 
+@media (prefers-color-scheme: dark) {
+  .socialNavigation > ul img {
+    filter: invert(1);
+  }
+}
+
 .socialNavigation > ul:hover > li:hover img,
 .socialNavigation > ul:active > li:active img,
 .socialNavigation > ul:focus-within > li:focus-within img {

@@ -54,6 +54,12 @@
   overflow: hidden;
 }
 
+@media (prefers-color-scheme: dark) {
+  .shopCategory .image {
+    border: 3px solid hsl(0, 0%, 90%);
+  }
+}
+
 @media (max-width: 800px) {
   .shopCategory .image {
     border-width: 2px;
