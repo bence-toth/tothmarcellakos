@@ -48,6 +48,12 @@
   transition: filter 0.5s;
 }
 
+@media (prefers-reduced-motion) {
+  .about .profilePicture {
+    transition: none;
+  }
+}
+
 body.dark .about .profilePicture {
   border: 3px solid hsl(0, 0%, 90%);
 }
