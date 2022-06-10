@@ -48,7 +48,7 @@ body.dark .darkModeToggle {
 }
 
 body.dark .darkModeToggleButton {
-  border: 2px solid hsl(0, 0%, 90%);
+  border-color: hsl(0, 0%, 90%);
 }
 
 body.dark .darkModeToggleButton::before {

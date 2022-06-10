@@ -37,7 +37,7 @@
 }
 
 body.dark .siteHeader {
-  border: 3px solid hsl(0, 0%, 10%);
+  border-color: hsl(0, 0%, 10%);
   filter: invert(1);
   box-shadow: 0 -40vmin 20vmin -20vmin hsla(0, 0%, 100%, 90%) inset;
 }

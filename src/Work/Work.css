@@ -44,7 +44,7 @@
 }
 
 body.dark .imageCategory .image {
-  border: 3px solid hsl(0, 0%, 90%);
+  border-color: hsl(0, 0%, 90%);
 }
 
 @media (max-width: 800px) {

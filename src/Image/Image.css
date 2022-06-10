@@ -5,7 +5,7 @@
 }
 
 body.dark .imagePage h1 {
-  border-bottom: 3px solid hsl(0, 0%, 90%);
+  border-bottom-color: hsl(0, 0%, 90%);
 }
 
 .imagePage p {
@@ -43,7 +43,7 @@ body.dark .imagePage h1 {
 }
 
 body.dark .imagePage .mainImage {
-  border: 3px solid hsl(0, 0%, 90%);
+  border-color: hsl(0, 0%, 90%);
 }
 
 .imagePage .variants {
@@ -73,7 +73,7 @@ body.dark .imagePage .mainImage {
 
 body.dark .imagePage .variants select {
   background-color: black;
-  border: 3px solid hsl(0, 0%, 90%);
+  border-color: hsl(0, 0%, 90%);
   color: hsl(0, 0%, 90%);
 }
 
@@ -121,7 +121,7 @@ body.dark .imagePage .variants select {
 
 body.dark .imagePage .checkout {
   color: hsl(0, 0%, 90%);
-  border: 3px solid hsl(0, 0%, 70%);
+  border-color: hsl(0, 0%, 70%);
 }
 
 .imagePage .checkout img {
@@ -153,7 +153,7 @@ body.dark .imagePage .checkout:active {
 }
 
 body.dark .imagePage .mockups img {
-  border: 3px solid hsl(0, 0%, 90%);
+  border-color: hsl(0, 0%, 90%);
 }
 
 @media (max-width: 920px) {

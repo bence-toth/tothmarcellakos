@@ -14,7 +14,7 @@
 }
 
 body.dark .spinner > div {
-  border: 3px solid hsl(0, 0%, 90%);
+  border-color: hsl(0, 0%, 90%);
   border-left-color: transparent;
 }
 

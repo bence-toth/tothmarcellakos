@@ -55,7 +55,7 @@
 }
 
 body.dark .about .profilePicture {
-  border: 3px solid hsl(0, 0%, 90%);
+  border-color: hsl(0, 0%, 90%);
 }
 
 .about .profilePicture:hover {
