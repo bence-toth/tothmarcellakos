@@ -43,7 +43,7 @@ body {
   }
 
   ::-webkit-scrollbar-thumb {
-    background: hsl(0, 0%, 80%);
+    background: hsl(0, 0%, 90%);
     border: 6px solid black;
   }
 
