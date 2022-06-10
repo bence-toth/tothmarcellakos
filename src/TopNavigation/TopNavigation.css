@@ -36,6 +36,12 @@ body.dark .darkModeToggle {
   transition: left 0.5s, transform 0.5s;
 }
 
+@media (prefers-reduced-motion) {
+  .darkModeToggleButton::before {
+    transition: none;
+  }
+}
+
 .darkModeToggleButton.on::before {
   left: calc(100% - 2px);
   transform: translateX(-100%);
@@ -71,6 +77,12 @@ body.dark .darkModeToggleButton::before {
   transition: opacity 0.25s;
 }
 
+@media (prefers-reduced-motion) {
+  .topNavigation > ul:hover > li {
+    transition: none;
+  }
+}
+
 .topNavigation > ul:hover > li,
 .topNavigation > ul:active > li,
 .topNavigation > ul:focus-within > li {
@@ -100,6 +112,14 @@ body.dark .topNavigation > ul img {
 .topNavigation > ul:active > li:active img,
 .topNavigation > ul:focus-within > li:focus-within img {
   transform: scale(0.9);
+}
+
+@media (prefers-reduced-motion) {
+  .topNavigation > ul:hover > li:hover img,
+  .topNavigation > ul:active > li:active img,
+  .topNavigation > ul:focus-within > li:focus-within img {
+    transform: scale(1);
+  }
 }
 
 @media (max-width: 1080px) {

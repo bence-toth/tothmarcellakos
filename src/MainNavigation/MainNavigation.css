@@ -26,6 +26,12 @@
   transition: transform 0.25s;
 }
 
+@media (prefers-reduced-motion) {
+  .mainNavigation a::after {
+    transition: none;
+  }
+}
+
 body.dark .mainNavigation a::after {
   background-color: hsl(0, 0%, 90%);
 }
