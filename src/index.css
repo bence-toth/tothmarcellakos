@@ -36,3 +36,18 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 80%);
+    border: 6px solid black;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: white;
+  }
+}

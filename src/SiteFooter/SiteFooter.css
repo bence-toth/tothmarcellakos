@@ -5,6 +5,12 @@
   text-align: center;
 }
 
+@media (prefers-color-scheme: dark) {
+  .siteFooter {
+    border-top: 3px solid hsl(0, 0%, 90%);
+  }
+}
+
 @media (max-width: 800px) {
   .siteFooter {
     padding-top: 0.5em;

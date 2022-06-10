@@ -9,8 +9,6 @@ import Image from "../Image/Image";
 import SiteFooter from "../SiteFooter/SiteFooter";
 import About from "../About/About";
 
-import "./App.css";
-
 const App = () => {
   const [stickyHeaderHeight, setStickyHeaderHeight] = useState(0);
 
