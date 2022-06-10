@@ -49,3 +49,21 @@ body.dark .siteHeader img {
 .siteHeader.small {
   aspect-ratio: 2 / 0.2;
 }
+
+@media (prefers-reduced-motion) {
+  .siteHeader.small {
+    aspect-ratio: 2 / 1;
+  }
+
+  @media (min-aspect-ratio: 2/1) {
+    .siteHeader.small {
+      aspect-ratio: 5 / 2;
+    }
+  }
+
+  @media (min-aspect-ratio: 5/2) {
+    .siteHeader.small {
+      aspect-ratio: 3 / 1;
+    }
+  }
+}

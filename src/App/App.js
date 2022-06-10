@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
+import useMediaQuery from "react-hook-media-query";
 
 import StickyHeader from "../StickyHeader/StickyHeader";
 import OrderMessage from "../OrderMessage/OrderMessage";
@@ -29,6 +30,8 @@ const App = () => {
     }
   }, [isDarkMode]);
 
+  const prefersReducedMotion = useMediaQuery("(prefers-reduced-motion)");
+
   return (
     <div className="app">
       <StickyHeader
@@ -36,7 +39,13 @@ const App = () => {
         toggleDarkMode={toggleDarkMode}
         isDarkMode={isDarkMode}
       />
-      <main style={{ paddingTop: `calc(${stickyHeaderHeight}px + 2em)` }}>
+      <main
+        style={
+          !prefersReducedMotion
+            ? { paddingTop: `calc(${stickyHeaderHeight}px + 2em)` }
+            : { paddingTop: "2em" }
+        }
+      >
         <OrderMessage />
         <Routes>
           <Route path="/" element={<Work />} />

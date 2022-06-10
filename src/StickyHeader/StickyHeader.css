@@ -19,6 +19,19 @@ body.dark .stickyHeader {
   }
 }
 
+@media (prefers-reduced-motion) {
+  .stickyHeader {
+    position: static;
+    width: 100%;
+  }
+
+  @media (max-width: 800px) {
+    .stickyHeader {
+      width: 100% - 1em;
+    }
+  }
+}
+
 .stickyHeader .shadow {
   position: absolute;
   width: 100%;
