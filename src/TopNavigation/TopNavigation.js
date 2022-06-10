@@ -3,10 +3,16 @@ import FacebookIcon from "./facebook.svg";
 import InstagramIcon from "./instagram.svg";
 import LinkedInIcon from "./linkedin.svg";
 
-import "./SocialNavigation.css";
+import "./TopNavigation.css";
 
-const SocialNavigation = () => (
-  <nav className="socialNavigation">
+const TopNavigation = ({ toggleDarkMode, isDarkMode }) => (
+  <nav className="topNavigation">
+    <button className="darkModeToggle" onClick={toggleDarkMode}>
+      <div
+        className={`darkModeToggleButton ${isDarkMode ? "on" : "off"}`}
+      ></div>
+      <span>{isDarkMode ? "Turn off dark mode" : "Turn on dark mode"}</span>
+    </button>
     <ul>
       <li>
         <a
@@ -48,4 +54,4 @@ const SocialNavigation = () => (
   </nav>
 );
 
-export default SocialNavigation;
+export default TopNavigation;

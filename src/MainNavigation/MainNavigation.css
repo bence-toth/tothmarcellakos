@@ -26,10 +26,8 @@
   transition: transform 0.25s;
 }
 
-@media (prefers-color-scheme: dark) {
-  .mainNavigation a::after {
-    background-color: hsl(0, 0%, 90%);
-  }
+body.dark .mainNavigation a::after {
+  background-color: hsl(0, 0%, 90%);
 }
 
 @media (max-width: 480px) {

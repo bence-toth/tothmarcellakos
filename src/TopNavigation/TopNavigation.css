@@ -1,0 +1,114 @@
+.darkModeToggle {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  color: black;
+  gap: 0.5em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+body.dark .darkModeToggle {
+  color: hsl(0, 0%, 90%);
+}
+
+.darkModeToggleButton {
+  width: 45px;
+  height: 24px;
+  border: 2px solid black;
+  border-radius: 12px;
+  display: block;
+  position: relative;
+  padding: 2px;
+}
+
+.darkModeToggleButton::before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: black;
+  position: absolute;
+  left: 2px;
+  transition: left 0.5s, transform 0.5s;
+}
+
+.darkModeToggleButton.on::before {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+
+body.dark .darkModeToggleButton {
+  border: 2px solid hsl(0, 0%, 90%);
+}
+
+body.dark .darkModeToggleButton::before {
+  background-color: hsl(0, 0%, 90%);
+}
+
+.topNavigation {
+  margin-bottom: 0.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .topNavigation {
+    margin-bottom: 0.25em;
+  }
+}
+
+.topNavigation > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.topNavigation > ul:hover > li {
+  transition: opacity 0.25s;
+}
+
+.topNavigation > ul:hover > li,
+.topNavigation > ul:active > li,
+.topNavigation > ul:focus-within > li {
+  opacity: 0.33;
+}
+
+.topNavigation > ul:hover > li:hover,
+.topNavigation > ul:active > li:active,
+.topNavigation > ul:focus-within > li:focus-within {
+  opacity: 1;
+}
+
+.topNavigation > ul a {
+  display: flex;
+}
+
+.topNavigation > ul img {
+  width: 2.5em;
+  transition: transform 0.25s;
+}
+
+body.dark .topNavigation > ul img {
+  filter: invert(1);
+}
+
+.topNavigation > ul:hover > li:hover img,
+.topNavigation > ul:active > li:active img,
+.topNavigation > ul:focus-within > li:focus-within img {
+  transform: scale(0.9);
+}
+
+@media (max-width: 1080px) {
+  .topNavigation > ul img {
+    width: 2.25em;
+  }
+}
+
+@media (max-width: 800px) {
+  .topNavigation > ul img {
+    width: 2em;
+  }
+}

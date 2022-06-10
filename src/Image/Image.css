@@ -4,10 +4,8 @@
   border-bottom: 3px solid black;
 }
 
-@media (prefers-color-scheme: dark) {
-  .imagePage h1 {
-    border-bottom: 3px solid hsl(0, 0%, 90%);
-  }
+body.dark .imagePage h1 {
+  border-bottom: 3px solid hsl(0, 0%, 90%);
 }
 
 .imagePage p {
@@ -44,10 +42,8 @@
   margin-bottom: 1em;
 }
 
-@media (prefers-color-scheme: dark) {
-  .imagePage .mainImage {
-    border: 3px solid hsl(0, 0%, 90%);
-  }
+body.dark .imagePage .mainImage {
+  border: 3px solid hsl(0, 0%, 90%);
 }
 
 .imagePage .variants {
@@ -75,12 +71,10 @@
   color: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  .imagePage .variants select {
-    background-color: black;
-    border: 3px solid hsl(0, 0%, 90%);
-    color: hsl(0, 0%, 90%);
-  }
+body.dark .imagePage .variants select {
+  background-color: black;
+  border: 3px solid hsl(0, 0%, 90%);
+  color: hsl(0, 0%, 90%);
 }
 
 .imagePage .pay {
@@ -125,11 +119,9 @@
   gap: 0.5em;
 }
 
-@media (prefers-color-scheme: dark) {
-  .imagePage .checkout {
-    color: hsl(0, 0%, 90%);
-    border: 3px solid hsl(0, 0%, 70%);
-  }
+body.dark .imagePage .checkout {
+  color: hsl(0, 0%, 90%);
+  border: 3px solid hsl(0, 0%, 70%);
 }
 
 .imagePage .checkout img {
@@ -142,12 +134,10 @@
   background-color: hsl(0, 0%, 20%);
 }
 
-@media (prefers-color-scheme: dark) {
-  .imagePage .checkout:hover,
-  .imagePage .checkout:focus,
-  .imagePage .checkout:active {
-    background-color: hsl(0, 0%, 10%);
-  }
+body.dark .imagePage .checkout:hover,
+body.dark .imagePage .checkout:focus,
+body.dark .imagePage .checkout:active {
+  background-color: hsl(0, 0%, 10%);
 }
 
 .imagePage .mockups {
@@ -162,10 +152,8 @@
   width: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-  .imagePage .mockups img {
-    border: 3px solid hsl(0, 0%, 90%);
-  }
+body.dark .imagePage .mockups img {
+  border: 3px solid hsl(0, 0%, 90%);
 }
 
 @media (max-width: 920px) {
