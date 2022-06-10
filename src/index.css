@@ -19,6 +19,11 @@ body {
   overflow-y: scroll;
 }
 
+body.dark {
+  background-color: black;
+  color: hsl(0, 0%, 90%);
+}
+
 ::-webkit-scrollbar {
   width: 16px;
 }
@@ -37,17 +42,15 @@ body {
   background: #555;
 }
 
-@media (prefers-color-scheme: dark) {
-  ::-webkit-scrollbar-track {
-    background: black;
-  }
+body.dark::-webkit-scrollbar-track {
+  background: black;
+}
 
-  ::-webkit-scrollbar-thumb {
-    background: hsl(0, 0%, 90%);
-    border: 6px solid black;
-  }
+body.dark::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 90%);
+  border: 6px solid black;
+}
 
-  ::-webkit-scrollbar-thumb:hover {
-    background: white;
-  }
+body.dark::-webkit-scrollbar-thumb:hover {
+  background: white;
 }

@@ -48,10 +48,8 @@
   transition: filter 0.5s;
 }
 
-@media (prefers-color-scheme: dark) {
-  .about .profilePicture {
-    border: 3px solid hsl(0, 0%, 90%);
-  }
+body.dark .about .profilePicture {
+  border: 3px solid hsl(0, 0%, 90%);
 }
 
 .about .profilePicture:hover {

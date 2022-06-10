@@ -43,10 +43,8 @@
   overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  .imageCategory .image {
-    border: 3px solid hsl(0, 0%, 90%);
-  }
+body.dark .imageCategory .image {
+  border: 3px solid hsl(0, 0%, 90%);
 }
 
 @media (max-width: 800px) {

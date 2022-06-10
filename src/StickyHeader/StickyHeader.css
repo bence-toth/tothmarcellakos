@@ -8,10 +8,8 @@
   z-index: 1;
 }
 
-@media (prefers-color-scheme: dark) {
-  .stickyHeader {
-    background-color: black;
-  }
+body.dark .stickyHeader {
+  background-color: black;
 }
 
 @media (max-width: 800px) {
@@ -36,14 +34,8 @@
   );
 }
 
-@media (prefers-color-scheme: dark) {
-  .stickyHeader .shadow {
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 1) 100%
-    );
-  }
+body.dark .stickyHeader .shadow {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 .stickyHeader .shadow.visible {

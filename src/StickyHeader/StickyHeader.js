@@ -1,13 +1,17 @@
 import { useCallback, useRef, useEffect, useState } from "react";
 import classNames from "classnames";
 
-import SocialNavigation from "../SocialNavigation/SocialNavigation";
+import TopNavigation from "../TopNavigation/TopNavigation";
 import SiteHeader from "../SiteHeader/SiteHeader";
 import MainNavigation from "../MainNavigation/MainNavigation";
 
 import "./StickyHeader.css";
 
-const StickyHeader = ({ setStickyHeaderHeight }) => {
+const StickyHeader = ({
+  setStickyHeaderHeight,
+  toggleDarkMode,
+  isDarkMode,
+}) => {
   const stickyHeaderResizeObserver = useRef(
     new ResizeObserver((entries) => {
       for (let entry of entries) {
@@ -46,7 +50,7 @@ const StickyHeader = ({ setStickyHeaderHeight }) => {
 
   return (
     <div className="stickyHeader" ref={stickyHeaderCallbackRef}>
-      <SocialNavigation />
+      <TopNavigation toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
       <SiteHeader />
       <MainNavigation />
       <div
