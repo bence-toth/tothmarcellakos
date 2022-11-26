@@ -46,116 +46,6 @@ body.dark .imagePage .mainImage {
   border-color: hsl(0, 0%, 90%);
 }
 
-.imagePage .variants {
-  display: flex;
-  align-items: center;
-  margin-top: 2em;
-}
-
-.imagePage .variants label {
-  font-size: 1.25em;
-  margin-right: 0.5em;
-}
-
-.imagePage .variants label:after {
-  content: ":";
-}
-
-.imagePage .variants select {
-  font-family: inherit;
-  padding: 0.5em 1em;
-  font-size: 1em;
-  border: 3px solid black;
-  border-radius: 5px;
-  font-weight: bold;
-  color: black;
-}
-
-body.dark .imagePage .variants select {
-  background-color: black;
-  border-color: hsl(0, 0%, 90%);
-  color: hsl(0, 0%, 90%);
-}
-
-.imagePage .pay {
-  display: flex;
-  align-items: center;
-  gap: 1em;
-  margin-top: 1em;
-}
-
-@media (max-width: 920px) {
-  .imagePage .discountedPriceWrapper {
-    text-align: center;
-  }
-}
-
-.imagePage .price {
-  font-size: 1.75em;
-  font-weight: bold;
-}
-
-.imagePage .oldPrice {
-  font-size: 1em;
-  font-weight: bold;
-  margin-top: 0.5em;
-  text-decoration: line-through;
-}
-
-.imagePage .checkout {
-  font-family: inherit;
-  padding: 0.75em 1.5em;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1.15em;
-  color: white;
-  background-color: black;
-  border: 3px solid black;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5em;
-}
-
-body.dark .imagePage .checkout {
-  color: hsl(0, 0%, 90%);
-  border-color: hsl(0, 0%, 70%);
-}
-
-.imagePage .checkout img {
-  width: 1.75em;
-}
-
-.imagePage .checkout:hover,
-.imagePage .checkout:focus,
-.imagePage .checkout:active {
-  background-color: hsl(0, 0%, 20%);
-}
-
-body.dark .imagePage .checkout:hover,
-body.dark .imagePage .checkout:focus,
-body.dark .imagePage .checkout:active {
-  background-color: hsl(0, 0%, 10%);
-}
-
-.imagePage .mockups {
-  grid-area: 3 / 2 / 4 / 3;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-.imagePage .mockups img {
-  border: 3px solid black;
-  width: 100%;
-}
-
-body.dark .imagePage .mockups img {
-  border-color: hsl(0, 0%, 90%);
-}
-
 @media (max-width: 920px) {
   .imagePage .columns {
     display: grid;
@@ -180,46 +70,10 @@ body.dark .imagePage .mockups img {
   .imagePage .preview {
     grid-area: 2 / 1 / 3 / 2;
   }
-
-  .imagePage .mockups {
-    grid-area: 4 / 1 / 5 / 2;
-  }
-
-  .imagePage .variants {
-    flex-direction: column;
-    gap: 0.5em;
-  }
-
-  .imagePage .variants select {
-    width: 100%;
-    max-width: 320px;
-  }
-
-  .imagePage .variants label:after {
-    content: "";
-  }
-
-  .imagePage .pay {
-    flex-direction: column-reverse;
-  }
-
-  .imagePage .checkout {
-    width: 100%;
-    max-width: 320px;
-  }
 }
 
 @media (max-width: 800px) {
   .imagePage .mainImage {
-    border-width: 2px;
-  }
-  .imagePage .variants select {
-    border-width: 2px;
-  }
-  .imagePage .checkout {
-    border-width: 2px;
-  }
-  .imagePage .mockups img {
     border-width: 2px;
   }
 }

@@ -20,14 +20,6 @@ const MainNavigation = () => {
         </li>
         <li>
           <Link
-            to="/shop"
-            className={classNames({ selected: location.pathname === "/shop" })}
-          >
-            Shop
-          </Link>
-        </li>
-        <li>
-          <Link
             to="/about"
             className={classNames({ selected: location.pathname === "/about" })}
           >

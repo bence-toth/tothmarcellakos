@@ -1,0 +1,12 @@
+.app {
+  max-width: calc(1280px + 2em);
+  padding: 1em;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (max-width: 800px) {
+  .app {
+    padding: 0.5em;
+  }
+}
