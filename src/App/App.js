@@ -3,12 +3,12 @@ import { Routes, Route } from "react-router-dom";
 import useMediaQuery from "react-hook-media-query";
 
 import StickyHeader from "../StickyHeader/StickyHeader";
-import OrderMessage from "../OrderMessage/OrderMessage";
 import Work from "../Work/Work";
-import Shop from "../Shop/Shop";
 import Image from "../Image/Image";
 import SiteFooter from "../SiteFooter/SiteFooter";
 import About from "../About/About";
+
+import "./App.css";
 
 const App = () => {
   const [stickyHeaderHeight, setStickyHeaderHeight] = useState(0);
@@ -46,11 +46,9 @@ const App = () => {
             : { paddingTop: "2em" }
         }
       >
-        <OrderMessage />
         <Routes>
           <Route path="/" element={<Work />} />
           <Route path="/works/:category/:image" element={<Image />} />
-          <Route path="/shop" element={<Shop />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </main>
